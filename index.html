@@ -83,6 +83,27 @@
       height: 48px;
       width: auto;
     }
+    .lab-link {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #f97316;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      position: relative;
+    }
+    .lab-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background: #f97316;
+      transition: width 0.3s ease;
+    }
+    .lab-link:hover::after {
+      width: 100%;
+    }
     .figure-section {
       padding: 2rem 0;
     }
@@ -210,8 +231,7 @@
             </div>
 
             <div style="margin-top:0.75rem;">
-              <a href="https://web.njit.edu/~alexzhou/" target="_blank"
-                 style="font-size:1rem; font-weight:600; color:#f97316; text-decoration:none; letter-spacing:0.02em;">
+              <a href="https://web.njit.edu/~alexzhou/" target="_blank" class="lab-link">
                 BioDynamics Lab
               </a>
             </div>
