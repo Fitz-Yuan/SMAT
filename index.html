@@ -64,6 +64,25 @@
   </script>
 
   <style>
+    .site-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .navbar-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.6rem 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-logo {
+      height: 48px;
+      width: auto;
+    }
     .figure-section {
       padding: 2rem 0;
     }
@@ -153,6 +172,13 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <!-- ======== NAVBAR ======== -->
+  <nav class="site-navbar">
+    <div class="navbar-inner">
+      <img src="static/images/logo.png" alt="Lab Logo" class="navbar-logo">
+    </div>
+  </nav>
+
   <main id="main-content">
 
   <!-- ======== HERO: Title + Authors ======== -->
@@ -181,6 +207,13 @@
             <div class="is-size-6 publication-authors" style="margin-top:0.5rem; color:#555;">
               <span><sup>1</sup>Department of Biomedical Engineering, New Jersey Institute of Technology</span><br>
               <span><sup>2</sup>Kessler Foundation</span>
+            </div>
+
+            <div style="margin-top:0.75rem;">
+              <a href="https://web.njit.edu/~alexzhou/" target="_blank"
+                 style="font-size:1rem; font-weight:600; color:#f97316; text-decoration:none; letter-spacing:0.02em;">
+                BioDynamics Lab
+              </a>
             </div>
 
             <div class="column has-text-centered" style="margin-top:1.2rem;">
