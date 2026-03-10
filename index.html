@@ -72,6 +72,13 @@
       max-width: 100%;
       border-radius: 6px;
     }
+    .figure-section.fig1 img {
+      max-width: 100%;
+    }
+    .figure-section.fig4 img,
+    .figure-section.fig7 img {
+      max-width: 70%;
+    }
     .figure-caption {
       margin-top: 1rem;
       color: #555;
@@ -89,7 +96,7 @@
     }
     .pdf-container {
       width: 100%;
-      height: 600px;
+      height: 850px;
       border: 1px solid #ddd;
       border-radius: 6px;
       overflow: hidden;
@@ -256,11 +263,10 @@
   <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Method Overview</h2>
-      <div class="figure-section">
+      <div class="figure-section fig1">
         <img src="static/images/fig1_framework.png"
              alt="Overview of the SMAT framework showing four training stages" />
         <p class="figure-caption has-text-centered">
-          <span class="figure-label">Fig. 1.</span>
           Overview of the SMAT framework. Two PPO-based actors — a musculoskeletal human actor
           &pi;<sub>h</sub> and an exoskeleton actor &pi;<sub>e</sub> — interact with a shared physics
           simulation through a shared critic. Stage 1: human-only baseline gait learning.
@@ -279,11 +285,10 @@
       <h2 class="title is-3 has-text-centered">Results</h2>
 
       <!-- Fig 4 -->
-      <div class="figure-section">
+      <div class="figure-section fig4">
         <img src="static/images/fig4_muscle_activation.png"
              alt="Right-side hip muscle activation over the gait cycle comparing Stage 2" />
         <p class="figure-caption has-text-centered">
-          <span class="figure-label">Fig. 4.</span>
           Right-side hip muscle activation over the gait cycle comparing Stage 2.
         </p>
       </div>
@@ -295,7 +300,6 @@
           <img src="static/images/fig5_ablation.png"
                alt="Ablation comparing right-hip normalized exoskeleton torque" />
           <p class="figure-caption has-text-centered">
-            <span class="figure-label">Fig. 5.</span>
             Ablation comparing right-hip normalized exoskeleton torque.
           </p>
         </div>
@@ -305,7 +309,6 @@
           <img src="static/images/fig6_speed_generalization.png"
                alt="Speed generalization on the GT dataset" />
           <p class="figure-caption has-text-centered">
-            <span class="figure-label">Fig. 6.</span>
             Speed generalization on the GT dataset.
           </p>
         </div>
@@ -313,11 +316,10 @@
       </div>
 
       <!-- Fig 7 -->
-      <div class="figure-section" style="margin-top:2rem;">
+      <div class="figure-section fig7" style="margin-top:2rem;">
         <img src="static/images/fig7_kinematics.png"
              alt="Hip kinematics, exo torque, and mechanical power across subjects" />
         <p class="figure-caption has-text-centered">
-          <span class="figure-label">Fig. 7.</span>
           Hip kinematics, exoskeleton torque, and mechanical power across subjects.
         </p>
       </div>
