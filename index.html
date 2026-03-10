@@ -75,11 +75,9 @@
     .figure-section.fig1 img {
       max-width: 100%;
     }
-    .figure-section.fig4 img {
-      max-width: 45%;
-    }
+    .figure-section.fig4 img,
     .figure-section.fig7 img {
-      max-width: 70%;
+      max-width: 50%;
     }
     .figure-caption {
       margin-top: 1rem;
@@ -289,9 +287,11 @@
       <!-- Fig 4 -->
       <div class="figure-section fig4">
         <img src="static/images/fig4_muscle_activation.png"
-             alt="Right-side hip muscle activation over the gait cycle comparing Stage 2" />
+             alt="Right-side hip muscle activation over the gait cycle comparing Stage 2 and Stage 4" />
         <p class="figure-caption has-text-centered">
-          Right-side hip muscle activation over the gait cycle comparing Stage 2.
+          Right-side hip muscle activation over the gait cycle comparing Stage 2 (no assistive torque)
+          and Stage 4 (maximum assistive torque 25&thinsp;Nm). Shaded bands: mean &plusmn; 1 s.d.
+          Dashed vertical lines mark mean toe-off for each condition.
         </p>
       </div>
 
@@ -300,18 +300,25 @@
         <!-- Fig 5 -->
         <div class="result-item">
           <img src="static/images/fig5_ablation.png"
-               alt="Ablation comparing right-hip normalized exoskeleton torque" />
+               alt="Ablation comparing right-hip normalized exo torque under four conditions" />
           <p class="figure-caption has-text-centered">
-            Ablation comparing right-hip normalized exoskeleton torque.
+            Ablation comparing right-hip normalized exo torque over the gait cycle under four conditions:
+            Stage 3 only without Stage 4 co-adaptation; Stage 4 only initialized from Stage 2 without
+            Stage 3 pre-training; Stage 4 only without the exo reward, initialized from Stage 2;
+            and the full Stage 3 + Stage 4 (SMAT) pipeline. Dotted vertical lines mark mean toe-off.
           </p>
         </div>
 
         <!-- Fig 6 -->
         <div class="result-item">
           <img src="static/images/fig6_speed_generalization.png"
-               alt="Speed generalization on the GT dataset" />
+               alt="Speed generalization on the GT dataset across three walking speeds" />
           <p class="figure-caption has-text-centered">
-            Speed generalization on the GT dataset.
+            Speed generalization on the GT dataset (10 subjects, 0.6, 1.2, and 1.8&thinsp;m/s).
+            <em>Top:</em> Gait-cycle-normalized group mean hip torque; solid: exo torque, dashed:
+            biological hip torque (no-exo, amplitude scaled for timing comparison).
+            <em>Bottom:</em> Hip exo power; thin lines: individual subjects, bold: group mean.
+            Dashed vertical line: toe-off (&approx;62%).
           </p>
         </div>
 
@@ -320,9 +327,14 @@
       <!-- Fig 7 -->
       <div class="figure-section fig7" style="margin-top:2rem;">
         <img src="static/images/fig7_kinematics.png"
-             alt="Hip kinematics, exo torque, and mechanical power across subjects" />
+             alt="Hip kinematics, exo torque, and mechanical power under assisted conditions" />
         <p class="figure-caption has-text-centered">
-          Hip kinematics, exoskeleton torque, and mechanical power across subjects.
+          Hip kinematics, exo torque, and mechanical power under assisted conditions
+          (0&thinsp;Nm: blue, 10&thinsp;Nm: green, 15&thinsp;Nm: red; 0% = peak hip flexion).
+          <strong>Top:</strong> Group-mean right hip angle.
+          <strong>Middle:</strong> Exoskeleton torque.
+          <strong>Bottom:</strong> Right hip assistance power.
+          Shaded bands: &plusmn;1 s.d.; thin lines: subject means.
         </p>
       </div>
 
